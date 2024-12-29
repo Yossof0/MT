@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Table v5</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+        
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Math Table v5</div>
+            <div class="button-group">
+                <div class="dropdown">
+                    <button class="icon-button theme-button"><i class="fas fa-cog"></i></button>
+                    <div class="theme-dropdown">
+                        <button class="theme-option" data-theme="theme-light"><i class="fas fa-sun"></i> Light</button>
+                        <button class="theme-option" data-theme="theme-dark"><i class="fas fa-moon"></i> Dark</button>
+                        <button class="theme-option" data-theme="theme-black-white"><i class="fas fa-adjust"></i> Black & White</button>
+                        <button class="theme-option" data-theme="theme-ocean"><i class="fas fa-water"></i> Ocean</button>
+                        <button class="theme-option" data-theme="theme-sky"><i class="fas fa-cloud"></i> Sky</button>
+                        <button class="theme-option" data-theme="theme-spring"><i class="fas fa-tree"></i> Spring</button>
+                        <button class="theme-option" data-theme="theme-cotton-candy"><i class="fas fa-candy-cane"></i> Cotton Candy</button>
+                        <button class="theme-option" data-theme="theme-cherry"><i class="fas fa-apple-alt"></i> Cherry</button>
+                        <button class="theme-option" data-theme="theme-purple"><i class="fas fa-atom"></i> Purple</button>
+                        <button class="theme-option" data-theme="theme-neon"><i class="fas fa-bolt"></i> Neon</button>
+                    <button class="theme-option" data-theme="theme-retro"><i class="fas fa-gamepad"></i> Retro</button>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="icon-button download-button"><i class="fas fa-download"></i></button>
+                    <div class="download-dropdown">
+                        <button class="download-option" data-format="pdf">Download as PDF</button>
+                        <button class="download-option" data-format="txt">Download as Text</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <h1 class="title">Math Table v5</h1>
+            <form id="myForm">
+                <input type="number" id="inputField" placeholder="Multiplication number" required>
+                <input type="number" id="NumberField" placeholder="Amount of multiplications" required>
+                <input type="submit" value="Submit" class="submit-button">
+            </form>
+            <div id="tableContainer" class="table-container"></div>
+            <canvas id="multiplicationChart" class="multiplication-chart"></canvas>
+        </div>
+        <footer class="credits">
+            <p>Created By <a href="https://www.youtube.com/@YossofABD-sj6gt" class="link">Yossof0</a></p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
